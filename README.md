@@ -1,42 +1,43 @@
-#  Automação de Disparo WhatsApp – DigiSac API
+# Disparo DigiSac / Minychat – Envio Automático de Mensagens em Massa
 
-Automação criada para realizar **envio em massa de mensagens no WhatsApp** através da **API Oficial DigiSac**, utilizando Python.  
-O projeto lê uma planilha de contatos, envia mensagens individuais e gera um relatório completo com o status de cada envio.
+Automação criada para enviar mensagens em massa via **API Oficial DigiSac**, ler contatos de um arquivo CSV/XLSX, disparar mensagens com texto + mídia, registrar cada envio e salvar o resultado em um arquivo `resultado_envio.csv`.
 
-Ideal para campanhas, notificações, comunicações operacionais e processos internos da InterWeg.
+O objetivo é permitir que a InterWeg realize campanhas, avisos e mensagens operacionais de maneira segura, auditável e escalável.
 
 ---
 
-##  Estrutura do Projeto
+##  Funcionalidades
 
+- Leitura de contatos via **CSV** ou **XLSX**  
+- Envio de mensagens via **API DigiSac**  
+- Envio de texto + mídia (`banner.jpg`)  
+- Tratamento de erros automáticos  
+- Registro de todos os envios em `resultado_envio.csv`  
+- Indicação clara de:
+  - Status: `ENVIADO` ou `FALHA`
+  - HTTP code retornado
+  - Detalhe completo da resposta da API
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
 DISPARO-DIGISAC/
-
-├── .env # Credenciais e endpoints da DigiSac
-
-├── banner.jpg # Imagem opcional para envio
-
-├── contato.csv.xlsx # Arquivo de entrada com telefones
-
-├── digisac_sender_text_v01.py # Script principal
-
-├── resultado_envio.csv # Log final de todos os envios
-
-├── teste.csv # Arquivo auxiliar
-
-
----
+ ├── .env                       # Token, endpoint e serviceId da DigiSac
+ ├── banner.jpg                 # Mídia enviada junto com a mensagem
+ ├── contato.csv.xlsx           # Lista de números a serem disparados
+ ├── digisac_sender_text_v01.py # Script principal de disparo
+ ├── resultado_envio.csv        # Log dos envios gerado automaticamente
+ └── teste.csv                  # Arquivo auxiliar para testes
+```
 
 ## 🛠 Requisitos
 
-- **Python 3.9+**
+**Python 3.9+**
 
-###  Bibliotecas utilizadas
+**Bibliotecas necessárias:**
 
-- `requests`
-- `pandas`
-- `python-dotenv`
-
-Instale tudo com:
-
-```bash
-pip install requests pandas python-dotenv
+- requests  
+- pandas  
+- python-dotenv
