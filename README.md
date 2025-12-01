@@ -10,6 +10,7 @@ Ideal para campanhas, notificações, comunicações operacionais e processos in
 ##  Estrutura do Projeto
 
 DISPARO-DIGISAC/
+
 ├── .env # Credenciais e endpoints da DigiSac
 
 ├── banner.jpg # Imagem opcional para envio
