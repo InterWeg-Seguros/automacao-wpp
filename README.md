@@ -11,10 +11,15 @@ Ideal para campanhas, notificações, comunicações operacionais e processos in
 
 DISPARO-DIGISAC/
 ├── .env # Credenciais e endpoints da DigiSac
+
 ├── banner.jpg # Imagem opcional para envio
+
 ├── contato.csv.xlsx # Arquivo de entrada com telefones
+
 ├── digisac_sender_text_v01.py # Script principal
+
 ├── resultado_envio.csv # Log final de todos os envios
+
 ├── teste.csv # Arquivo auxiliar
 
 
