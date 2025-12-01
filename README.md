@@ -1,4 +1,4 @@
-# 🚀 Automação de Disparo WhatsApp – DigiSac API
+#  Automação de Disparo WhatsApp – DigiSac API
 
 Automação criada para realizar **envio em massa de mensagens no WhatsApp** através da **API Oficial DigiSac**, utilizando Python.  
 O projeto lê uma planilha de contatos, envia mensagens individuais e gera um relatório completo com o status de cada envio.
@@ -7,7 +7,7 @@ Ideal para campanhas, notificações, comunicações operacionais e processos in
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 DISPARO-DIGISAC/
 ├── .env # Credenciais e endpoints da DigiSac
@@ -24,7 +24,7 @@ DISPARO-DIGISAC/
 
 - **Python 3.9+**
 
-### 📦 Bibliotecas utilizadas
+###  Bibliotecas utilizadas
 
 - `requests`
 - `pandas`
